@@ -1,23 +1,23 @@
 package io.cucumber.skeleton;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 
 public class StepDefinitions {
 
     static Belly belly = new Belly();
     static int hours;
 
-    @BeforeEach
+    @Before
     public void informationStringStart(){
         System.out.println("The test is starting");
     }
 
-    @AfterEach
+    @After
     public void informationStringFinish(){
         System.out.println("The test is finished");
     }
